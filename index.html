@@ -2,74 +2,289 @@
 <html>
 <head>
     <title>타임 아카</title>
-    <meta charset="uft-8">
+    <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        a {
+            color:green;
+            text-decoration: none;
+        }
+        h1 { 
+            font-size : 60px;
+            text-align: center;
+            border-bottom:2px solid gray;
+            width: 100%;
+            margin:0;
+            padding: 20px;
+        }
+       #grid ul {
+        font: size 20px;
+        border-right: 2px solid gray;
+        
+        margin:0;
+        padding:20px;
+        padding-left: 30px;
+       }
+       #grid{
+        display:grid;
+        grid-template-columns: 300px 1fr;
+        
+        
+       }
+       #grid #article{
+        padding-left: 20px;
+       }
+       table {
+        border-collapse: collapse;
+        width: 800px;
+        margin-left: 70px;
+        margin-top: 50px;
+        border: 1px solid #ddd;
+        background-color: rgb(253, 253, 253);
+        }
+        @media(max-width:900px){
+        #grid{
+            display:block;
+            
+        }
+        #grid ul {
+        font: size 20px;
+        border-right: none;
+        
+        margin:0;
+        padding:20px;
+        padding-left: 30px;
+       }
+       table {
+        margin-left: -10px; /* 여기서 원하는 만큼 음수 값으로 조정하세요 */
+         }
+       }
+
+/* 테이블 행 */
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+tbody tr:nth-child(n+1) {
+  height: 80px; /* 높이 조절 */
+}
+th {
+  background-color: #1b1b1b;
+  color: #ddd;
+}
+
+/* 테이블 올렸을 때 */
+tbody tr:hover {
+  background-color: #d3d3d3;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 테이블 비율 */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 9%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 13%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 13%;
+}
+th:nth-child(4),
+td:nth-child(4) {
+  width: 13%;
+}
+th:nth-child(5),
+td:nth-child(5) {
+  width: 13%;
+}
+th:nth-child(6),
+td:nth-child(6) {
+  width: 13%;
+}
+th:nth-child(7),
+td:nth-child(7) {
+  width: 13%;
+}
+th:nth-child(8),
+td:nth-child(8) {
+  width: 13%;
+}
+
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">타임 아카</a></h1>
+<div id="grid">
     <ul>
         <li>강의 목록</li>
         <li>국어 OOO 월 5시 - 8시</li>
     </ul>
 
-    <h2>타임 아카</h2>
-    2023.12.09(토)
+    
+    <div id="article">
     <p>
+        
         <table>
-            <tr>
+            <thead>
+              <tr>
                 <th></th>
-                <th>월</th>    
-                <th>화</th>    
-                <th>수</th>     
-                <th>목</th>    
-                <th>금</th> 
-                <th>토</th>     
-                <th>일</th>    
-            </tr>
-            <tr>
-                <th>9시</th>
-            </tr>
-            <tr>
-                <th>10시</th>
-            </tr>
-            <tr>
-                <th>11시</th>
-            </tr>
-            <tr>
-                <th>12시</th>
-            </tr>
-            <tr>
-                <th>1시</th>
-            </tr>
-            <tr>
-                <th>2시</th>
-            </tr>
-            <tr>
-                <th>3시</th>
-            </tr>
-            <tr>
-                <th>4시</th>
-            </tr>
-            <tr>
-                <th>5시</th>
-            </tr>
-            <tr>
-                <th>6시</th>
-            </tr>
-            <tr>
-                <th>7시</th>
-            </tr>
-            <tr>
-                <th>8시</th>
-            </tr>
-            <tr>
-                <th>9시</th>
-            </tr>
-            <tr>
-                <th>10시</th>
-            </tr>
-
-        </table>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+                <th>일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>1시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>8시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>  
+        
     </p>
+    </div>
+</div>
 </body>
 </html>
